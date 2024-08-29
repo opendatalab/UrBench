@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/SkyDiffusion.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/SkyDiffusion.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>UrBench</title>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+      'gtm.start':
+              new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+  })(window, document, 'script', 'dataLayer', 'GTM-MFCT45H');</script>
+  <!-- End Google Tag Manager -->
+  <link rel="icon" type="image/x-icon" href="static/images/SkyDiffusion.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-2 publication-title">
+              <!-- <b>SkyDiffusion:</b> -->
+              <b>UrBench</b>: A Comprehensive Benchmark for Evaluating Large Multimodal Models in Multi-View Urban Scenarios</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://baichuanzhou.github.io/" target="_blank">Baichuan Zhou</a><sup>1<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>*</mo></math></sup>,</span>
+              </span>
+              <span class="author-block">
+                Haote Yang<sup>1<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>*</mo></math></sup>,</span>
+              <span class="author-block">
+                Dairong Chen<sup>4,2<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>*</mo></math></sup>,</span>
+              <span class="author-block">
+                <a href="https://yejy53.github.io/" target="_blank">Junyan Ye</a><sup>2,1<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>*</mo></math></sup>,</span>
+              </span>
+            </div>
+            <div class="is-size-5 publication-authors">
+                <span class="author-block">
+                  <a href="https://beccabai.github.io/" target="_blank">Tianyi Bai</a><sup>1</sup>,</span>
+                </span>
+                <span class="author-block">
+                  Jinhua Yu<sup>2</sup>,</span>
+                </span>
+                <span class="author-block">
+                  <a href="https://www.zhangsongyang.com/" target="_blank">Songyang Zhang</a><sup>1</sup>,</span>
+                </span>
+                <span class="author-block">
+                  <a href="http://dahua.site/" target="_blank">Dahua Lin</a><sup>1,3</sup>,</span>
+                </span>
+            </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                  <a href="https://conghui.github.io/" target="_blank">Conghui He</a><sup>1,3<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>†</mo></math></sup>,</span>
+              </span>
+              <span class="author-block">
+                  <a href="https://liweijia.github.io/" target="_blank">Weijia Li</a><sup>2<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>†</mo></math></sup></span>
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>Shanghai AI Laboratory </span>
+              <span class="author-block"><sup>2</sup>Sun Yat-Sen University </span>
+            </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>3</sup>SenseTime Research</span>
+              <span class="author-block"><sup>4</sup>Wuhan University</span>
+            </div>
+
+
+
+            <h4><sup><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>*</mo></math></sup>Equal Contribution<sup></h4>
+              <h4><sup><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>†</mo></math></sup>Correspondence<sup></h4>
+
+<!--                  &lt;!&ndash; Github link &ndash;&gt;-->
+<!--                  <span class="link-block">-->
+<!--                    <a href="https://opendatalab.github.io/skydiffusion/" target="_blank"-->
+<!--                    class="external-link button is-normal is-rounded is-dark">-->
+<!--                    <span class="icon">-->
+<!--                      <i class="fab fa-github"></i>-->
+<!--                    </span>-->
+<!--                    <span>Code</span>-->
+<!--                  </a>-->
+<!--                </span>-->
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2408.01812" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+
+              <!-- Huggingface Dataset Link-->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2408.01812" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-database"></i>
+                  </span>
+                  <span>Huggingface Dataset</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser image-->
+<!--<section class="hero is-small">-->
+<!--  <div class="container">-->
+<!--    <div class="hero-body">-->
+<!--      <h2 class="title is-3 has-text-centered">UrBench Overview</h2>-->
+<!--    </div>-->
+<!--    <div class="hero is-small">-->
+<!--      <div id="results-carousel" class="carousel results-carousel">-->
+<!--        <div class="item item-image1" style=" height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">-->
+<!--          <h2 class="subtitle is-5 has-text-justified">-->
+<!--            <span style="font-weight:bold;">UrBench</span> is a comprehensive benchmark designed for-->
+<!--            evaluating LMMs in complex multi-view urban scenarios. Compared to existing works, UrBench offers:-->
+<!--            <ul>-->
+<!--              <li>(1) <i><b>Region-level and role-level questions.</b></i> <b>UrBench</b> contains diverse questions at both region and role level,-->
+<!--                while previous benchmarks generally focus on region-level questions, </li>-->
+<!--              <li>(2) <i><b>Multi-view data.</b></i> <b>UrBench</b> incorporates both street and satellite data, as well as their paired-up cross-view data.-->
+<!--                Prior benchmarks generally focus on evaluations from a single view perspective.</li>-->
+<!--              <li>(3) <i><b>Diverse task types.</b></i> <b>UrBench</b> contains 14 diverse task types categorized into four task dimensions,-->
+<!--                while previous benchmarks only offer limited task types such as counting, object recognition, etc.</li>-->
+<!--            </ul>-->
+<!--          </h2>-->
+<!--          <img src="static/images/comparison_plot.png" class="center-image" style="max-width: 100%; height: auto;"/>-->
+<!--           <h2 class="subtitle has-text-centered">Example tasks in <span style="font-weight:bold;">BLINK</span>.</h2> -->
+<!--        </div>-->
+<!--        <div class="item item-image2" style=" height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">-->
+<!--          <img src="static/images/tasks.png" class="center-image" style="max-width: 100%; height: auto;"/>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
+
+
+<section class="hero is-large">
+  <div >
+    <div class="container">
+      <div id="teaser-carousel" class="carousel results-carousel">
+        <div class="item" style=" height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+          <!-- Your image here -->
+
+          <img src="static/images/tasks.png" class="center-image" style="max-width: 100%; height: auto;"/>
+          <h2 class="subtitle is-5 has-text-justified">
+            We propose UrBench, a multi-view benchmark designed
+            to evaluate LMMs’ performances in urban environments.
+            Our benchmark includes 14 urban tasks that we categorize into various dimensions. These tasks encompass
+            both region-level evaluations that assess LMMs’ capabilities in urban planning, as well as role-level evaluations
+            that examine LMMs’ responses to daily issues.
+          </h2>
+
+        </div>
+        <div class="item" style=" height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+          <!-- Your image here -->
+          <img src="static/images/data_process_plot.png" class="center-image" style="max-width: 100%; height: auto;"/>
+          <h2 class="subtitle is-5 has-text-justified">
+            We introduce a novel benchmark curation pipeline that
+            involves a cross-view detection-matching algorithm for
+            object-level annotation generation and a question generation approach that integrates LMM-based, rule-based,
+            and human-based methods. This pipeline ensures the creation of a large-scale and high-quality corpus of questions, significantly enhancing the diversity and depth of
+              evaluation across multiple urban tasks.
+          </h2>
+
+        </div>
+        <div class="item" style=" height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+          <!-- Your image here -->
+          <img src="static/images/radar_chart.png" class="center-image" style="max-width: 80%; height: 60%; top:auto; bottom: auto; align-items: center;"/>
+          <h2 class="subtitle is-5 has-text-justified">
+            We evaluate 21 popular LMMs on <b>UrBench</b>. Our evaluation results show that current models lag behind human
+            experts in most tasks and reveal LMMs’ inconsistent behaviors with different urban views, which demonstrates
+            the limitations of current LMMs in urban environments. Here, we show several leading LMMs' performances on <b>UrBench</b>.
+          </h2>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Recent evaluations of Large Multimodal Models (LMMs) have explored their capabilities in various domains, with only few benchmarks specifically focusing on urban environments.
+            Moreover, existing urban benchmarks have been limited to evaluating LMMs with basic region-level urban tasks under singular views, leading to incomplete evaluations of LMMs' abilities in urban environments.
+            To address these issues, we present <b>UrBench</b>, a comprehensive benchmark designed for evaluating LMMs in complex multi-view urban scenarios.
+            <b>UrBench</b> contains 11.6K meticulously curated questions at both region-level and role-level that cover 4 task dimensions: Geo-Localization, Scene Reasoning, Scene Understanding, and Object Understanding, totaling 14 task types.
+            In constructing <b>UrBench</b>, we utilize data from existing datasets and additionally collect data from 11 cities, creating new annotations using a cross-view detection-matching method.
+            With these images and annotations, we then integrate LMM-based, rule-based, and human-based methods to construct large-scale high-quality questions.
+            Our evaluations on 21 LMMs show that current LMMs struggle in the urban environments in several aspects. Even the best performing GPT-4o lags behind humans in most tasks, ranging from simple tasks such as counting to complex tasks such as orientation, localization and object attribute recognition, with an average performance gap of 17.4%.
+            Our benchmark also reveals that LMMs exhibit inconsistent behaviors with different urban views, especially with respect to understanding cross-view relations.
+            <b>UrBench</b> datasets and benchmark results will be publicly available.
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+
+<!-- Dataset -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-five-fifths">
+        <h2 class="title is-3">Comparisons with Existing Benchmarks</h2>
+        <div class="content has-text-justified">
+          Compared to previous benchmarks, <b>UrBench</b> offers:
+          <ul>
+            <li> <i><b>Region-level and role-level questions.</b></i> <b>UrBench</b> contains diverse questions at both region and role level,
+              while previous benchmarks generally focus on region-level questions.</li>
+            <li> <i><b>Multi-view data.</b></i> <b>UrBench</b> incorporates both street and satellite data, as well as their paired-up cross-view data.
+              Prior benchmarks generally focus on evaluations from a single view perspective.</li>
+            <li> <i><b>Diverse task types.</b></i> <b>UrBench</b> contains 14 diverse task types categorized into four task dimensions,
+              while previous benchmarks only offer limited task types such as counting, object recognition, etc.</li>
+          </ul>
+        <div class="column is-centered has-text-centered">
+          <img src="./static/images/comparison_plot.png" style="height: 80%; width: auto"/>
+        </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- End Dataset -->
+
+<section class="hero is-medium">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Detailed Statistics of UrBench</h2>
+      <div id="teaser-carousel" class="carousel results-carousel">
+        <div class="item" style=" height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+          <!-- Your image here -->
+
+          <img src="static/images/pie_plot.png" class="center-image" style="max-width: 65%; height: auto;"/>
+          <h2 class="subtitle is-5 has-text-justified">
+            The 14 types of tasks under 4 evaluation dimensions.
+          </h2>
+
+        </div>
+        <div class="item" style=" height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+          <!-- Your image here -->
+          <img src="static/images/task_view_histogram.png" class="center-image" style="max-width: 80%; height: auto;"/>
+          <h2 class="subtitle is-5 has-text-justified">
+            The view types of each task.
+          </h2>
+
+        </div>
+        <div class="item" style=" height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+          <!-- Your image here -->
+          <img src="static/images/data_statistics.png" class="center-image" style="max-width: 80%; height: auto; top:auto; bottom: auto; align-items: center;"/>
+          <h2 class="subtitle is-5 has-text-justified">
+            The statistics of UrBench. cross, sat, and str are the abbreviations for cross-view, satellite-view, and street-view. mono, pano, and multi are the
+            abbreviations of monocular, panoramic, and multiple. MC and open means multiple-choice and open-ended, respectively.
+
+          </h2>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Evaluation -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-five-fifths">
+        <h2 class="title is-3">Evaluation</h2>
+        <div class="content has-text-justified">
+          <!-- Qualitative Results -->
+          <h3></h3>
+         <div class="column is-centered has-text-justified">
+           <p style="font-size: 20px;">
+             UrBench poses significant challenges to current SoTA LMMs. We find that the best performing closed-source model GPT-4o and open-source model VILA-1.5-
+             40B only achieve a <b>61.2%</b> and a <b>53.1%</b> accuracy, respectively. Interestingly, our findings indicate that the primary
+             limitation of these models lies in their ability to comprehend UrBench questions, not in their capacity to process multiple images, as the performance between multi-image and
+             their single-image counterparts shows little difference, such as LLaVA-NeXT-8B and LLaVA-NeXT-Interleave in the table.
+             Overall, the challenging nature of our benchmark indicates that current LMMs’ strong performance on the general
+             benchmarks are not generalized to the multi-view urban scenarios.
+           </p>
+           <img src="./static/images/evaluation_results.png" class="center-image"/>
+                 <figcaption style="font-size: 14px;text-align: center;">Performances of LMMs and human experts on the UrBench test set.</figcaption>
+         </div>
+          <!-- End Qualitative Results -->
+
+
+        </div>
+        <h2 class="title is-3">Qualitative Results</h2>
+        <img src="./static/images/qualitative_results.png" class="center-image"/>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- End evaluation -->
+
+<!-- Image carousel -->
+  <section class="section hero is-small">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+          <h2 class="title is-3 has-text-centered">Case Study</h2>
+          <div id="results-carousel" class="carousel results-carousel">
+            <div class="item" style=" height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+              <!-- Your image here -->
+              <img src="static/images/CO1.png" class="center-image" style="max-width: 80%; height: auto;"/>
+            </div>
+            <div class="item" style=" height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+              <!-- Your image here -->
+              <img src="static/images/CO2.png" class="center-image" style="max-width: 80%; height: auto;"/>
+            </div>
+            <div class="item" style=" height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+              <!-- Your image here -->
+              <img src="static/images/CR1.png" class="center-image" style="max-width: 80%; height: auto;"/>
+            </div>
+            <div class="item" style=" height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+              <!-- Your image here -->
+              <img src="static/images/CR2.png" class="center-image" style="max-width: 80%; height: auto;"/>
+            </div>
+            <div class="item" style=" height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+              <!-- Your image here -->
+              <img src="static/images/CR3.png" class="center-image" style="max-width: 80%; height: auto;"/>
+            </div>
+            <div class="item" style=" height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+              <!-- Your image here -->
+              <img src="static/images/IR1.png" class="center-image" style="max-width: 80%; height: auto;"/>
+            </div>
+            <div class="item" style=" height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+              <!-- Your image here -->
+              <img src="static/images/OAR1.png" class="center-image" style="max-width: 80%; height: auto;"/>
+            </div>
+            <div class="item" style=" height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+              <!-- Your image here -->
+              <img src="static/images/OAR2.png" class="center-image" style="max-width: 80%; height: auto;"/>
+            </div>
+            <div class="item" style=" height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+              <!-- Your image here -->
+              <img src="static/images/OAR3.png" class="center-image" style="max-width: 80%; height: auto;"/>
+            </div>
+            <div class="item" style=" height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+              <!-- Your image here -->
+              <img src="static/images/OAR4.png" class="center-image" style="max-width: 80%; height: auto;"/>
+            </div>
+            <div class="item" style=" height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+              <!-- Your image here -->
+              <img src="static/images/OG1.png" class="center-image" style="max-width: 80%; height: auto;"/>
+            </div>
+            <div class="item" style=" height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+              <!-- Your image here -->
+              <img src="static/images/OG2.png" class="center-image" style="max-width: 80%; height: auto;"/>
+            </div>
+            <div class="item" style=" height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+              <!-- Your image here -->
+              <img src="static/images/OM1.png" class="center-image" style="max-width: 80%; height: auto;"/>
+            </div>
+            <div class="item" style=" height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+              <!-- Your image here -->
+              <img src="static/images/OR1.png" class="center-image" style="max-width: 80%; height: auto;"/>
+            </div>
+            <div class="item" style=" height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+              <!-- Your image here -->
+              <img src="static/images/RBR1.png" class="center-image" style="max-width: 80%; height: auto;"/>
+            </div>
+            <div class="item" style=" height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+              <!-- Your image here -->
+              <img src="static/images/RU1.png" class="center-image" style="max-width: 80%; height: auto;"/>
+            </div>
+            <div class="item" style=" height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+              <!-- Your image here -->
+              <img src="static/images/RU2.png" class="center-image" style="max-width: 80%; height: auto;"/>
+            </div>
+            <div class="item" style=" height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+              <!-- Your image here -->
+              <img src="static/images/SC1.png" class="center-image" style="max-width: 80%; height: auto;"/>
+            </div>
+            <div class="item" style=" height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+              <!-- Your image here -->
+              <img src="static/images/SC2.png" class="center-image" style="max-width: 80%; height: auto;"/>
+            </div>
+            <div class="item" style=" height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+              <!-- Your image here -->
+              <img src="static/images/SC3.png" class="center-image" style="max-width: 80%; height: auto;"/>
+            </div>
+            <div class="item" style=" height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+              <!-- Your image here -->
+              <img src="static/images/SC4.png" class="center-image" style="max-width: 80%; height: auto;"/>
+            </div>
+            <div class="item" style=" height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+              <!-- Your image here -->
+              <img src="static/images/SR1.png" class="center-image" style="max-width: 80%; height: auto;"/>
+            </div>
+            <div class="item" style=" height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+              <!-- Your image here -->
+              <img src="static/images/SR2.png" class="center-image" style="max-width: 80%; height: auto;"/>
+            </div>
+            <div class="item" style=" height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+              <!-- Your image here -->
+              <img src="static/images/SR3.png" class="center-image" style="max-width: 80%; height: auto;"/>
+            </div>
+            <div class="item" style=" height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+              <!-- Your image here -->
+              <img src="static/images/TSR1.png" class="center-image" style="max-width: 80%; height: auto;"/>
+            </div>
+            <div class="item" style=" height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+              <!-- Your image here -->
+              <img src="static/images/VPR1.png" class="center-image" style="max-width: 80%; height: auto;"/>
+            </div>
+          </div>
+      </div>
+
+    </div>
+  </section>
+
+<!-- End image carousel -->
+
+
+<!--&lt;!&ndash;BibTex citation &ndash;&gt;-->
+<!--  <section class="section" id="BibTeX">-->
+<!--    <div class="container is-max-desktop content">-->
+<!--      <h2 class="title">BibTeX</h2>-->
+<!--      <pre><code>@misc{ye2024skydiffusionstreettosatelliteimagesynthesis,-->
+<!--        title={SkyDiffusion: Street-to-Satellite Image Synthesis with Diffusion Models and BEV Paradigm}, -->
+<!--        author={Junyan Ye and Jun He and Weijia Li and Zhutao Lv and Jinhua Yu and Haote Yang and Conghui He},-->
+<!--        year={2024},-->
+<!--        eprint={2408.01812},-->
+<!--        archivePrefix={arXiv},-->
+<!--        primaryClass={cs.CV},-->
+<!--        url={https://arxiv.org/abs/2408.01812}, -->
+<!--  }</code></pre>-->
+<!--    </div>-->
+<!--</section>-->
+<!--&lt;!&ndash;End BibTex citation &ndash;&gt;-->
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
