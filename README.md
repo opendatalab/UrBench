@@ -1,11 +1,8 @@
 <div align="center">
 	<h1>UrBench: A Comprehensive Benchmark for Evaluating Large Multimodal Models in Multi-View Urban Scenarios</h1>
-	<a href="https://arxiv.org/abs/2408.01812"><img src='https://img.shields.io/badge/arXiv-2408.01812-red?logo=arXiv' alt='arXiv'></a>
-	<a href="https://longhz140516.github.io/SkyDiffusion.github.io/"><img src='https://img.shields.io/badge/Project-SkyDiffusion-green' alt='Project'></a>
-	<a href=""><img src='https://img.shields.io/badge/python-3.9-blue.svg' alt='Python'></a>
+	<a href="https://opendatalab.github.io/UrBench/"><img src='https://img.shields.io/badge/Project-UrBench-green' alt='Project'></a>
 	<a href=""><img src='https://img.shields.io/badge/License-Apache%202.0-yellow' alt='Python'></a>
 </div>
-
 
 <img src="./static/images/fig2_overview_2.jpg" alt="">
 
