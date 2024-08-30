@@ -189,60 +189,60 @@
 <!--</section>-->
 
 
-<section class="hero is-large">
-  <div >
-    <div class="container">
-      <div id="teaser-carousel" class="carousel results-carousel">
-        <div class="item" style=" height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-          <!-- Your image here -->
+<!--<section class="hero is-large">-->
+<!--  <div >-->
+<!--    <div class="container">-->
+<!--      <div id="teaser-carousel" class="carousel results-carousel">-->
+<!--        <div class="item" style=" height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">-->
+<!--          &lt;!&ndash; Your image here &ndash;&gt;-->
 
-          <img src="static/images/tasks.png" class="center-image" style="max-width: 100%; height: auto;"/>
-          <h2 class="subtitle is-5 has-text-justified">
-            We propose UrBench, a multi-view benchmark designed
-            to evaluate LMMs’ performances in urban environments.
-            Our benchmark includes 14 urban tasks that we categorize into various dimensions. These tasks encompass
-            both region-level evaluations that assess LMMs’ capabilities in urban planning, as well as role-level evaluations
-            that examine LMMs’ responses to daily issues.
-          </h2>
+<!--          <img src="static/images/tasks.png" class="center-image" style="max-width: 100%; height: auto;"/>-->
+<!--          <h2 class="subtitle is-5 has-text-justified">-->
+<!--            We propose UrBench, a multi-view benchmark designed-->
+<!--            to evaluate LMMs’ performances in urban environments.-->
+<!--            Our benchmark includes 14 urban tasks that we categorize into various dimensions. These tasks encompass-->
+<!--            both region-level evaluations that assess LMMs’ capabilities in urban planning, as well as role-level evaluations-->
+<!--            that examine LMMs’ responses to daily issues.-->
+<!--          </h2>-->
 
-        </div>
-        <div class="item" style=" height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-          <!-- Your image here -->
-          <img src="static/images/data_process_plot.png" class="center-image" style="max-width: 100%; height: auto;"/>
-          <h2 class="subtitle is-5 has-text-justified">
-            We introduce a novel benchmark curation pipeline that
-            involves a cross-view detection-matching algorithm for
-            object-level annotation generation and a question generation approach that integrates LMM-based, rule-based,
-            and human-based methods. This pipeline ensures the creation of a large-scale and high-quality corpus of questions, significantly enhancing the diversity and depth of
-              evaluation across multiple urban tasks.
-          </h2>
+<!--        </div>-->
+<!--        <div class="item" style=" height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">-->
+<!--          &lt;!&ndash; Your image here &ndash;&gt;-->
+<!--          <img src="static/images/data_process_plot.png" class="center-image" style="max-width: 100%; height: auto;"/>-->
+<!--          <h2 class="subtitle is-5 has-text-justified">-->
+<!--            We introduce a novel benchmark curation pipeline that-->
+<!--            involves a cross-view detection-matching algorithm for-->
+<!--            object-level annotation generation and a question generation approach that integrates LMM-based, rule-based,-->
+<!--            and human-based methods. This pipeline ensures the creation of a large-scale and high-quality corpus of questions, significantly enhancing the diversity and depth of-->
+<!--              evaluation across multiple urban tasks.-->
+<!--          </h2>-->
 
-        </div>
-        <div class="item" style=" height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-          <!-- Your image here -->
-          <img src="static/images/radar_chart.png" class="center-image" style="max-width: 80%; height: 60%; top:auto; bottom: auto; align-items: center;"/>
-          <h2 class="subtitle is-5 has-text-justified">
-            We evaluate 21 popular LMMs on <b>UrBench</b>. Our evaluation results show that current models lag behind human
-            experts in most tasks and reveal LMMs’ inconsistent behaviors with different urban views, which demonstrates
-            the limitations of current LMMs in urban environments. Here, we show several leading LMMs' performances on <b>UrBench</b>.
-          </h2>
+<!--        </div>-->
+<!--        <div class="item" style=" height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">-->
+<!--          &lt;!&ndash; Your image here &ndash;&gt;-->
+<!--          <img src="static/images/radar_chart.png" class="center-image" style="max-width: 80%; height: 60%; top:auto; bottom: auto; align-items: center;"/>-->
+<!--          <h2 class="subtitle is-5 has-text-justified">-->
+<!--            We evaluate 21 popular LMMs on <b>UrBench</b>. Our evaluation results show that current models lag behind human-->
+<!--            experts in most tasks and reveal LMMs’ inconsistent behaviors with different urban views, which demonstrates-->
+<!--            the limitations of current LMMs in urban environments. Here, we show several leading LMMs' performances on <b>UrBench</b>.-->
+<!--          </h2>-->
 
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
 
 
 
 <!-- Paper abstract -->
-<section class="section hero is-light">
+<section class="section hero">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <p>
+          <p style="font-size: 18px">
             Recent evaluations of Large Multimodal Models (LMMs) have explored their capabilities in various domains, with only few benchmarks specifically focusing on urban environments.
             Moreover, existing urban benchmarks have been limited to evaluating LMMs with basic region-level urban tasks under singular views, leading to incomplete evaluations of LMMs' abilities in urban environments.
             To address these issues, we present <b>UrBench</b>, a comprehensive benchmark designed for evaluating LMMs in complex multi-view urban scenarios.
@@ -263,14 +263,41 @@
 
 
 
-<!-- Dataset -->
-<section class="section">
+
+<section class="section hero is-light">
   <div class="container is-max-desktop">
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-five-fifths">
-        <h2 class="title is-3">Comparisons with Existing Benchmarks</h2>
+        <h2 class="title is-3">UrBench Overview</h2>
         <div class="content has-text-justified">
+          <div class="column is-centered has-text-centered">
+            <img src="./static/images/tasks.png" style="max-width: 100%; height: auto"/>
+          </div>
+          <div class="has-text-justified" style="font-size: 20px">
+            We propose <b>UrBench</b>, a multi-view benchmark designed
+            to evaluate LMMs’ performances in urban environments.
+            Our benchmark includes 14 urban tasks that we categorize into various dimensions. These tasks encompass
+            both region-level evaluations that assess LMMs’ capabilities in urban planning, as well as role-level evaluations
+            that examine LMMs’ responses to daily issues.
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- Dataset -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-five-fifths">
+        <h2 class="title is-3">Comparisons with Existing Benchmarks</h2>
+        <div class="content has-text-justified" style="font-size: 20px">
           Compared to previous benchmarks, <b>UrBench</b> offers:
           <ul>
             <li> <i><b>Region-level and role-level questions.</b></i> <b>UrBench</b> contains diverse questions at both region and role level,
@@ -281,8 +308,38 @@
               while previous benchmarks only offer limited task types such as counting, object recognition, etc.</li>
           </ul>
         <div class="column is-centered has-text-centered">
-          <img src="./static/images/comparison_plot.png" style="height: 80%; width: auto"/>
+          <img src="./static/images/comparison_plot.png" style="max-width: 85%; height: auto"/>
         </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div>
+        <h2 class="title is-3">Data Curation Pipeline of UrBench</h2>
+        <div class="content has-text-justified">
+          <div class="column is-centered has-text-justified">
+            <img src="./static/images/data_process_plot.png" style="max-width: 100%; height: auto"/>
+<!--            <h3 class="subtitle is-5 has-text-justified">-->
+            <p style="font-size: 20px">
+              We introduce a novel benchmark curation pipeline that
+              involves a cross-view detection-matching algorithm for
+              object-level annotation generation and a question generation approach that integrates LMM-based, rule-based,
+              and human-based methods. This pipeline ensures the creation of a large-scale and high-quality corpus of questions, significantly enhancing the diversity and depth of
+              evaluation across multiple urban tasks.
+            </p>
+<!--            </h3>-->
+          </div>
+
         </div>
       </div>
 
@@ -293,51 +350,77 @@
 
 <!-- End Dataset -->
 
-<section class="hero is-medium">
+<!--<section class="section hero">-->
+<!--  <div class="hero-body">-->
+<!--    <div class="container is-max-desktop">-->
+<!--      <h2 class="title is-3 has-text-centered">Detailed Statistics of UrBench</h2>-->
+<!--      <div id="teaser-carousel" class="carousel results-carousel">-->
+<!--        <div class="item" style=" height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">-->
+<!--          &lt;!&ndash; Your image here &ndash;&gt;-->
+
+<!--          <img src="static/images/pie_plot.png" class="center-image" style="max-width: 65%; height: auto;"/>-->
+<!--          <h2 class="subtitle is-5 has-text-justified">-->
+<!--            The 14 types of tasks under 4 evaluation dimensions.-->
+<!--          </h2>-->
+
+<!--        </div>-->
+<!--        <div class="item" style=" height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">-->
+<!--          &lt;!&ndash; Your image here &ndash;&gt;-->
+<!--          <img src="static/images/task_view_histogram.png" class="center-image" style="max-width: 55%; height: auto;"/>-->
+<!--          <h2 class="subtitle is-5 has-text-justified">-->
+<!--            The view types of each task.-->
+<!--          </h2>-->
+
+<!--        </div>-->
+<!--        <div class="item" style=" height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">-->
+<!--          &lt;!&ndash; Your image here &ndash;&gt;-->
+<!--          <img src="static/images/data_statistics.png" class="center-image" style="max-width: 55%; height: auto; top:auto; bottom: auto; align-items: center;"/>-->
+<!--          <p style="font-size: 20px">-->
+<!--            The statistics of UrBench. cross, sat, and str are the abbreviations for cross-view, satellite-view, and street-view. mono, pano, and multi are the-->
+<!--            abbreviations of monocular, panoramic, and multiple. MC and open means multiple-choice and open-ended, respectively.-->
+
+<!--          </p>-->
+
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
+
+<section class="section hero ">
   <div class="hero-body">
     <div class="container is-max-desktop">
-      <h2 class="title is-3 has-text-centered">Detailed Statistics of UrBench</h2>
-      <div id="teaser-carousel" class="carousel results-carousel">
-        <div class="item" style=" height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-          <!-- Your image here -->
+      <h2 class="title is-3 has-text-centered">Statistics & Characteristics of UrBench</h2>
+      <p style="font-size: 20px">
+        <b>UrBench</b> introduces 14 diverse tasks in the urban environment, covering multiple different views. While humans handle most tasks easily, we find LMMs still struggle.
+      </p>
+      <div id="teaser-flex" style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: nowrap; top: auto">
 
-          <img src="static/images/pie_plot.png" class="center-image" style="max-width: 65%; height: auto;"/>
-          <h2 class="subtitle is-5 has-text-justified">
-            The 14 types of tasks under 4 evaluation dimensions.
-          </h2>
-
+        <div class="item" style="flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; margin: 10px;">
+          <img src="static/images/pie_plot.png" class="center-image" style="width: 80%; height: auto;"/>
         </div>
-        <div class="item" style=" height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-          <!-- Your image here -->
-          <img src="static/images/task_view_histogram.png" class="center-image" style="max-width: 80%; height: auto;"/>
-          <h2 class="subtitle is-5 has-text-justified">
-            The view types of each task.
-          </h2>
 
+        <div class="item" style="flex: 1.2; display: flex; flex-direction: column; justify-content: center; align-items: center; margin: 10px;">
+          <img src="static/images/radar_chart.png" class="center-image" style="width: 120%; height: auto;"/>
         </div>
-        <div class="item" style=" height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-          <!-- Your image here -->
-          <img src="static/images/data_statistics.png" class="center-image" style="max-width: 80%; height: auto; top:auto; bottom: auto; align-items: center;"/>
-          <h2 class="subtitle is-5 has-text-justified">
-            The statistics of UrBench. cross, sat, and str are the abbreviations for cross-view, satellite-view, and street-view. mono, pano, and multi are the
-            abbreviations of monocular, panoramic, and multiple. MC and open means multiple-choice and open-ended, respectively.
 
-          </h2>
-
-        </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="hero">
+
+
+
+
+<section class="section hero is-light">
   <div class="hero-body">
     <div class="container is-max-desktop">
     <h2 class="title is-3 has-text-centered">Qualitative Results</h2>
       <div id="teaser-carousel" class="carousel results-carousel">
         <div class="item" style=" height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
           <!-- Your image here -->
-          <h2 class="title is-3 has-text-justified">Geo-Localization</h2>
+          <h2 class="title is-4 has-text-justified" style="font-family: 'Times New Roman'">Geo-Localization</h2>
           <img src="static/images/dimension1.png" class="center-image" style="max-width: 100%; height: auto;"/>
           <h2 class="subtitle is-5 has-text-justified">
 <!--            The 14 types of tasks under 4 evaluation dimensions.-->
@@ -346,7 +429,7 @@
         </div>
         <div class="item" style=" height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
           <!-- Your image here -->
-          <h2 class="title is-3 has-text-justified">Scene Reasoning</h2>
+          <h2 class="title is-4 has-text-justified" style="font-family: 'Times New Roman'">Scene Reasoning</h2>
           <img src="static/images/dimension2.png" class="center-image" style="max-width: 100%; height: auto;"/>
           <h2 class="subtitle is-5 has-text-justified">
 <!--            The view types of each task.-->
@@ -355,7 +438,7 @@
         </div>
         <div class="item" style=" height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
           <!-- Your image here -->
-          <h2 class="title is-3 has-text-justified">Scene Understanding</h2>
+          <h2 class="title is-4 has-text-justified" style="font-family: 'Times New Roman'">Scene Understanding</h2>
           <img src="static/images/dimension3.png" class="center-image" style="max-width: 100%; height: auto; top:auto; bottom: auto; align-items: center;"/>
           <h2 class="subtitle is-5 has-text-justified">
 <!--            The statistics of UrBench. cross, sat, and str are the abbreviations for cross-view, satellite-view, and street-view. mono, pano, and multi are the-->
@@ -366,7 +449,7 @@
         </div>
         <div class="item" style=" height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
           <!-- Your image here -->
-          <h2 class="title is-3 has-text-justified">Object Understanding</h2>
+          <h2 class="title is-4 has-text-justified" style="font-family: 'Times New Roman'">Object Understanding</h2>
           <img src="static/images/dimension4.png" class="center-image" style="max-width: 100%; height: auto; top:auto; bottom: auto; align-items: center;"/>
           <h2 class="subtitle is-5 has-text-justified">
             <!--            The statistics of UrBench. cross, sat, and str are the abbreviations for cross-view, satellite-view, and street-view. mono, pano, and multi are the-->
@@ -379,16 +462,17 @@
     </div>
 
   </div>
+</section>
 
 
 
 
 <!-- Evaluation -->
-<section class="section">
+<section class="section hero">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-five-fifths">
-        <h2 class="title is-3">Evaluation</h2>
+        <h2 class="title is-3">Evaluation Results</h2>
         <div class="content has-text-justified">
           <!-- Qualitative Results -->
           <h3></h3>
@@ -396,13 +480,13 @@
            <p style="font-size: 20px;">
              UrBench poses significant challenges to current SoTA LMMs. We find that the best performing closed-source model GPT-4o and open-source model VILA-1.5-
              40B only achieve a <b>61.2%</b> and a <b>53.1%</b> accuracy, respectively. Interestingly, our findings indicate that the primary
-             limitation of these models lies in their ability to comprehend UrBench questions, not in their capacity to process multiple images, as the performance between multi-image and
+             limitation of these models lies in their ability to comprehend <b>UrBench</b> questions, not in their capacity to process multiple images, as the performance between multi-image and
              their single-image counterparts shows little difference, such as LLaVA-NeXT-8B and LLaVA-NeXT-Interleave in the table.
              Overall, the challenging nature of our benchmark indicates that current LMMs’ strong performance on the general
              benchmarks are not generalized to the multi-view urban scenarios.
            </p>
            <img src="./static/images/evaluation_results.png" class="center-image"/>
-                 <figcaption style="font-size: 14px;text-align: center;">Performances of LMMs and human experts on the UrBench test set.</figcaption>
+                 <figcaption style="font-size: 20px;text-align: center;">Performances of LMMs and human experts on the <b>UrBench</b> test set.</figcaption>
          </div>
           <!-- End Qualitative Results -->
 
@@ -418,10 +502,13 @@
 <!-- End evaluation -->
 
 <!-- Image carousel -->
-  <section class="section hero is-small">
+  <section class="section hero is-light">
     <div class="hero-body">
       <div class="container is-max-desktop">
           <h2 class="title is-3 has-text-centered">Case Study</h2>
+          <div class="has-text-justified" style="font-size: 20px">
+            We present randomly selected samples from the 14 tasks of <b>UrBench</b>, with GPT-4o, VILA-1.5-40B and Claude-3.5-Sonnet's responses attached.
+          </div>
           <div id="results-carousel" class="carousel results-carousel">
             <div class="item" style=" height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
               <!-- Your image here -->
