@@ -1,0 +1,16 @@
+group: citybench_val_all
+task:
+- citybench_attribute_comparison_val
+- citybench_attribute_recognition_val
+- citybench_city_retrieval_val
+- citybench_ground_object_recognition_val
+- citybench_image_retrieval_val
+- citybench_localization_val
+- citybench_orientation_val
+- citybench_visual_prompt_reasoning_val
+- citybench_role_based_reasoning_val
+- citybench_traffic_sign_reasoning_val
+- citybench_road_understanding_val
+- citybench_counting_val
+- citybench_referring_expression_grounding_val
+- citybench_object_matching_val

@@ -1,0 +1,4 @@
+group: citybench
+task:
+- citybench_val
+- citybench_test
