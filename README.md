@@ -77,7 +77,7 @@ that examine LMMs’ responses to daily issues.
 Please clone our repository and change to that folder
 ```bash
 git clone https://github.com/opendatalab/Urbench.git
-cd LOKI
+cd urbench
 ```
 
 Create a new python environment and install relevant requirements
