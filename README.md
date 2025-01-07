@@ -2,7 +2,7 @@
 
 This repo contains evaluation code for the paper "[UrBench: A Comprehensive Benchmark for Evaluating Large Multimodal Models in Multi-View Urban Scenarios](https://arxiv.org/pdf/2408.17267)" [AAAI 2025]
 
-[**🌐 Homepage**](https://opendatalab.github.io/UrBench/) | [**🤗 Dataset**](https://opendatalab.github.io/UrBench/) | [**📑 Paper**](https://arxiv.org/pdf/2408.17267) | [**💻 Code**](https://github.com/opendatalab/UrBench) | [**📖 arXiv**](https://arxiv.org/abs/2408.17267)
+[**🌐 Homepage**](https://opendatalab.github.io/UrBench/) | [**🤗 Dataset**](https://huggingface.co/datasets/bczhou/UrBench) | [**📑 Paper**](https://arxiv.org/pdf/2408.17267) | [**💻 Code**](https://github.com/opendatalab/UrBench) | [**📖 arXiv**](https://arxiv.org/abs/2408.17267)
 
 ## &#x1F389; News
 * **🔥[2024.12.11]** UrBench has been accepted to AAAI 2025 main track!
