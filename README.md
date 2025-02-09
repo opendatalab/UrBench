@@ -5,6 +5,7 @@ This repo contains evaluation code for the paper "[UrBench: A Comprehensive Benc
 [**🌐 Homepage**](https://opendatalab.github.io/UrBench/) | [**🤗 Dataset**](https://huggingface.co/datasets/bczhou/UrBench) | [**📑 Paper**](https://arxiv.org/pdf/2408.17267) | [**💻 Code**](https://github.com/opendatalab/UrBench) | [**📖 arXiv**](https://arxiv.org/abs/2408.17267)
 
 ## &#x1F389; News
+* **🔥[2025.02.09]** UrBench now includes test results from [Deepseek-VL2](https://github.com/deepseek-ai/DeepSeek-VL2) model family!
 * **🔥[2024.12.11]** UrBench has been accepted to AAAI 2025 main track!
 
 
