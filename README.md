@@ -105,7 +105,7 @@ python -m accelerate.commands.launch --num_processes=2 --main_process_port=10043
 @article{zhou2024urbench,
   title={Urbench: A comprehensive benchmark for evaluating large multimodal models in multi-view urban scenarios},
   author={Zhou, Baichuan and Yang, Haote and Chen, Dairong and Ye, Junyan and Bai, Tianyi and Yu, Jinhua and Zhang, Songyang and Lin, Dahua and He, Conghui and Li, Weijia},
-  journal={arXiv preprint arXiv:2408.17267},
-  year={2024}
+  journal={AAAI},
+  year={2025}
 }
 ```
