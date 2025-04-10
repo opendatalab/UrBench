@@ -1,7 +1,0 @@
-group: citybench_group_img_haote_val_all
-task:
-- citybench_image_retrieval_group_img_val
-- citybench_localization_group_img_val
-- citybench_orientation_group_img_val
-- citybench_object_matching_val
-- citybench_referring_expression_grounding_val

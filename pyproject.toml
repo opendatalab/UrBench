@@ -7,7 +7,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "lmms_eval"
-version = "0.2.0.post1"
+version = "0.2.1.post1"
 authors = [
     { name = "LMMMs-Lab Evaluation Team", email = "lmms_eval@outlook.com" },
 ]
@@ -18,7 +18,7 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
-requires-python = ">=3.8"
+requires-python = ">=3.10, <3.13"
 license = { text = "MIT" }
 dependencies = [
     "accelerate>=0.29.1",

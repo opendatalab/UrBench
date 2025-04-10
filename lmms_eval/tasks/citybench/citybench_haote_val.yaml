@@ -1,8 +1,0 @@
-group: citybench_haote_val_all
-task:
-- citybench_image_retrieval_val
-- citybench_localization_val
-- citybench_orientation_val
-- citybench_object_matching_val
-- citybench_referring_expression_grounding_val
-

@@ -1,0 +1,4 @@
+group: urbench
+task:
+- urbench_val
+- urbench_test

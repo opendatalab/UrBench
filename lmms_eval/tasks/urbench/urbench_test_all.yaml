@@ -1,0 +1,16 @@
+group: urbench_test_all
+task:
+- scene_comparison_test
+- object_attribute_recognition_test
+- city_retrieval_test
+- scene_recognition_test
+- image_retrieval_test
+- camera_localization_test
+- orientation_test
+- visual_prompt_reasoning_test
+- role_based_reasoning_test
+- traffic_sign_reasoning_test
+- road_understanding_test
+- counting_test
+- object_grounding_test
+- object_matching_test

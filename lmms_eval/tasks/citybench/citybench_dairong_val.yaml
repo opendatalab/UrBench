@@ -1,7 +1,0 @@
-group: citybench_group_img_dairong_val
-task:
-- citybench_attribute_comparison_val
-- citybench_attribute_recognition_val
-- citybench_city_retrieval_val
-- citybench_ground_object_recognition_val
-- citybench_counting_val

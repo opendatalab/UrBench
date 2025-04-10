@@ -1,0 +1,16 @@
+group: urbench_val_all
+task:
+- scene_comparison_val
+- object_attribute_recognition_val
+- city_retrieval_val
+- scene_recognition_val
+- image_retrieval_val
+- camera_localization_val
+- orientation_val
+- visual_prompt_reasoning_val
+- role_based_reasoning_val
+- traffic_sign_reasoning_val
+- road_understanding_val
+- counting_val
+- object_grounding_val
+- object_matching_val

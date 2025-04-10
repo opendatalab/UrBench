@@ -92,7 +92,7 @@ pip install -e .
 
 Here's an example of running evaluation on UrBench's test set with TinyLLaVA
 ```bash
-python -m accelerate.commands.launch --num_processes=2 --main_process_port=10043 -m lmms_eval --model=llava_hf --model_args="pretrained="bczhou/tiny-llava-v1-hf",device=""" --log_samples --log_samples_suffix tinyllava --tasks citybench_test_all --output_path ./logs
+python -m accelerate.commands.launch --num_processes=2 --main_process_port=10043 -m lmms_eval --model=llava_hf --model_args="pretrained="bczhou/tiny-llava-v1-hf",device=""" --log_samples --log_samples_suffix tinyllava --tasks urbench_test_all --output_path ./logs
 ```
 
 

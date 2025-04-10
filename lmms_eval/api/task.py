@@ -763,8 +763,16 @@ class ConfigurableTask(Task):
                 
     @retry(stop=(stop_after_attempt(5) | stop_after_delay(60)), wait=wait_fixed(2))
     def download(self, dataset_kwargs=None) -> None:
-        self.dataset = self.load_dataset(dataset_kwargs=dataset_kwargs)
-        self.dataset_no_image = self.load_dataset(dataset_kwargs=dataset_kwargs)
+        # self.dataset = self.load_dataset(dataset_kwargs=dataset_kwargs)
+        # self.dataset_no_image = self.load_dataset(dataset_kwargs=dataset_kwargs)
+        self.dataset = datasets.load_dataset(
+            path=self.DATASET_PATH,
+            name=self.DATASET_NAME,
+        )
+        self.dataset_no_image = datasets.load_dataset(
+            path=self.DATASET_PATH,
+            name=self.DATASET_NAME,
+        )
         
         for doc_name in self.dataset_no_image:
             remove_cols = []

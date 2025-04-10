@@ -41,3 +41,5 @@ logs_citybench_val_all/
 scripts/
 previous_log_dirs/
 previous_txt_dirs/
+.venv/
+uv.lock

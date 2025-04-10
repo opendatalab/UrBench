@@ -1,5 +1,6 @@
 import torch
-
+from accelerate import Accelerator, DistributedType, InitProcessGroupKwargs
+from datetime import timedelta
 from tqdm import tqdm
 from lmms_eval import utils
 from lmms_eval.api.instance import Instance
@@ -58,15 +59,17 @@ class LlavaHf(lmms):
         # Do not use kwargs for now
         assert kwargs == {}, f"Unexpected kwargs: {kwargs}"
 
-        accelerator = Accelerator()
-        if accelerator.num_processes > 1 and device_map == "":
+        accelerator_kwargs = InitProcessGroupKwargs(timeout=timedelta(weeks=52))
+        accelerator = Accelerator(kwargs_handlers=[accelerator_kwargs])
+        if accelerator.num_processes > 1:
             self._device = torch.device(f"cuda:{accelerator.local_process_index}")
             self.device_map = f"cuda:{accelerator.local_process_index}"
-        else:
+        elif accelerator.num_processes == 1 and device_map == "auto":
             self._device = torch.device(device)
             self.device_map = device_map
-        if isinstance(dtype, str) and dtype != "auto":
-            dtype = getattr(torch, dtype)
+        else:
+            self._device = torch.device(f"cuda:{accelerator.local_process_index}")
+            self.device_map = f"cuda:{accelerator.local_process_index}"
 
         if "1.5" in pretrained:
             self._model = LlavaForConditionalGeneration.from_pretrained(pretrained, revision=revision, torch_dtype=dtype, device_map=self.device_map, trust_remote_code=trust_remote_code, attn_implementation=attn_implementation)
